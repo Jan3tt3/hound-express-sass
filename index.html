@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hound Express</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header" id="inicio">
+    <div class="container header-content">
+      <img src="img/logo-Hound_Express.png" alt="Hound Express" class="logo" />
+      <h1>Hound Express</h1>
+      <p class="slogan">Tu envío, en buenas patas.</p>
+      <nav class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#registro">Registro de Guías</a>
+        <a href="#estado">Estado General</a>
+        <a href="#lista">Lista de Guías</a>
+        <a href="#buscar">Buscar Guías</a>
+        <a href="#historial">Historial de Guías</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Registro de Guias -->
+    <section id="registro" class="form-section">
+      <h2>Registro de Guías</h2>
+      <form class="register-form" id="formGuia">
+        <input type="text" id="numeroGuia" placeholder="Número de guía" required />
+        <input type="text" id="destinatario" placeholder="Destinatario" required />
+        <input type="text" id="origen" placeholder="Origen" required />
+        <input type="text" id="destino" placeholder="Destino" required />
+        <input type="date" id="fecha"required />
+        <select id="estado"required>
+          <option>Pendiente</option>
+          <option>En tránsito</option>
+          <option>Entregado</option>
+        </select>
+        <button type="submit" class="btn primary"><i class="fas fa-paper-plane"></i> Enviar</button>
+        <p id="mensajeError" style="color: red;"></p>
+      </form>
+    </section>
+    <!-- Panel de estados -->
+    <section id="estado" class="status-panel">
+      <h2>Estado General</h2>
+      <div class="status-cards">
+        <div class="card"><h3>Total Activas</h3><p id="totalGuias">12</p></div>
+        <div class="card"><h3>En Tránsito</h3><p id="guiasTransito">5</p></div>
+        <div class="card"><h3>Entregadas</h3><p id="guiasEntregadas">7</p></div>
+      </div>
+    </section>
+    <!-- Lista de Guías -->
+    <section id="listaGuias" class="guide-list">
+      <h2>Lista de Guías</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Número</th>
+            <th>Estado</th>
+            <th>Origen</th>
+            <th>Destino</th>
+            <th>Última Actualización</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="buscar" class="search-section">
+      <h2>Buscar Guía</h2>
+      <input type="text" placeholder="Ingrese número de guía" />
+      <button class="btn"><i class="fas fa-search"></i> Buscar</button>
+    </section>
+    <!-- Modal de historial -->
+    <section id="modalHistorial" class="history-section">
+      <span id="cerrarModal" class="close">&times;</span>
+      <h2>Historial de Guías</h2>
+      <p>Aquí aparecerán los cambios realizados en las guías.</p>
+      <ul id="historialContenido"></ul>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Hound Express. Todos los derechos reservados.</p>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
