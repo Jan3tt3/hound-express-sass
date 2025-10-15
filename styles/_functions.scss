@@ -1,0 +1,13 @@
+@function shade($color, $percent) {
+  @return mix(black, $color, $percent);
+}
+@function spacing($multiplier) {
+  @return $multiplier * $spacing-unit;
+}
+@function text-contrast($background) {
+  @if (lightness($background) > 50) {
+    @return $black;
+  } @else {
+    @return $white;
+  }
+}

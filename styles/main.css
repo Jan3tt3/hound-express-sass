@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #0a1d3d;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+}
+
+a {
+  color: #6dd4f2;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.main-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 1rem 0;
+}
+.main-header .header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+.main-header .logo {
+  max-width: 120px;
+}
+.main-header h1 {
+  font-size: 2rem;
+  color: #6dd4f2;
+}
+.main-header .slogan {
+  font-style: italic;
+  color: #aaaaaa;
+  font-size: 0.95rem;
+}
+.main-header .main-nav {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.main-header .main-nav a {
+  font-weight: bold;
+  color: #0a1d3d;
+}
+.main-header .main-nav a:hover {
+  color: #6dd4f2;
+}
+
+.form-section,
+.status-panel,
+.guide-list,
+.search-section,
+.history-section {
+  padding: 2rem;
+  background-color: #ffffff;
+  margin: 1rem auto;
+  max-width: 960px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.form-section h2,
+.status-panel h2,
+.guide-list h2,
+.search-section h2,
+.history-section h2 {
+  margin-bottom: 1rem;
+  color: #0a1d3d;
+}
+
+.status-cards {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.status-cards .card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+.status-cards .card h3 {
+  margin-bottom: 0.5rem;
+}
+.status-cards .card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6dd4f2;
+}
+
+.main-footer {
+  background-color: #0a1d3d;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+.main-footer .social {
+  margin-top: 0.5rem;
+}
+.main-footer .social a {
+  color: #ffffff;
+  margin: 0 0.5rem;
+}
+.main-footer .social a:hover {
+  color: #6dd4f2;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+.btn.primary {
+  background-color: #6dd4f2;
+  color: #000000;
+}
+.btn.primary:hover {
+  background-color: #62bfda;
+}
+.btn.small {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #6dd4f2;
+  box-shadow: 0 0 0 2px rgba(109, 212, 242, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead {
+  background-color: #6dd4f2;
+  color: #000000;
+}
+table thead th {
+  text-align: left;
+  padding: 0.5rem;
+}
+table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+table tbody tr:hover {
+  background-color: rgba(109, 212, 242, 0.05);
+}
+table tbody tr td {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+table tbody tr .btn {
+  margin-right: 0.5rem;
+}/*# sourceMappingURL=main.css.map */

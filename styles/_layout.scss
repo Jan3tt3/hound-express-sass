@@ -1,0 +1,86 @@
+.main-header {
+  background-color: $white;
+  border-bottom: 1px solid $light-gray;
+  padding: spacing(1) 0;
+  .header-content {
+    @include flex-center;
+    flex-direction: column;
+    gap: spacing(0.5);
+    text-align: center;
+  }
+  .logo {
+    max-width: 120px;
+  }
+  h1 {
+    font-size: 2rem;
+    color: $primary-color;
+  }
+  .slogan {
+    font-style: italic;
+    color: $gray;
+    font-size: 0.95rem;
+  }
+  .main-nav {
+    margin-top: spacing(1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: spacing(1);
+    a {
+      font-weight: bold;
+      color: $dark-blue;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+.form-section,
+.status-panel,
+.guide-list,
+.search-section,
+.history-section {
+  padding: spacing(2);
+  background-color: $white;
+  margin: spacing(1) auto;
+  max-width: 960px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba($black, 0.05);
+  h2 {
+    margin-bottom: spacing(1);
+    color: $dark-blue;
+  }
+}
+.status-cards {
+  display: flex;
+  gap: spacing(1);
+  margin-top: spacing(1);
+  .card {
+    flex: 1;
+    @include card;
+    text-align: center;
+    h3 {
+      margin-bottom: spacing(0.5);
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $primary-color;
+    }
+  }
+}
+.main-footer {
+  background-color: $dark-blue;
+  color: $white;
+  text-align: center;
+  padding: spacing(1);
+  .social {
+    margin-top: spacing(0.5);
+    a {
+      color: $white;
+      margin: 0 spacing(0.5);
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
